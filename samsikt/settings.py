@@ -25,7 +25,7 @@ SECRET_KEY = '5d&9rgo1_gbhn0)b8+=bf*e9^h9t%+qamm_d^x!kl3uunbp55$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['samsikt.no','www.samsikt.no',]
 
 
 # Application definition
