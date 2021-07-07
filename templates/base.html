@@ -1,0 +1,234 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <title>{% block title %}Samsikt || IT company{% endblock %}</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Start Include All CSS -->
+        <link rel="stylesheet" href="{% static 'assets/css/bootstrap.css' %}"/>
+        <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}"/>
+        <link rel="stylesheet" href="{% static 'assets/css/elegant-icons.css' %}"/>
+        <link rel="stylesheet" href="{% static 'assets/css/graptor-icons.css' %}"/>
+        <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}"/>
+        <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/owl.theme.default.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/lightcase.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/theme.css' %}"/>
+        <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}"/>
+        <!-- End Include All CSS -->
+
+        <!-- Favicon Icon -->
+        <link rel="icon"  type="image/png" href="assets/images/favicon.png">
+        <!-- Favicon Icon -->
+    </head>
+    <body>
+
+
+        <!-- Topbar Start -->
+        <section class="topbar-02">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <!-- logo Start-->
+                        <a class="navbar-brand" href="index.html">
+                            <h1>Samsikt</h1>
+                            <!-- <img src="assets/images/logo2.png" alt=""> -->
+                        </a>
+                        <!-- logo End-->
+                    </div>
+                    <div class="col-md-9">
+                        <div class="topinfo-02">
+                            <div class="icon-box-4">
+                                <div class="ic-box">
+                                    <i class="graptor-calls"></i>
+                                </div>
+                                <p>Call Us</p>
+                                <h5><a href="tel:360-779-2228">360-779-2228</a></h5>
+                            </div>
+                            <div class="icon-box-4">
+                                <div class="ic-box">
+                                    <i class="graptor-mail"></i>
+                                </div>
+                                <p>Our Mail</p>
+                                <h5><a href="mailto:yourname@mail.com">yourname@mail.com</a></h5>
+                            </div>
+                            <div class="icon-box-4">
+                                <div class="ic-box">
+                                    <i class="graptor-time"></i>
+                                </div>
+                                <p>Working Hours</p>
+                                <h5>Mon - Sat 9.00 to 17.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Topbar End -->
+
+        <!-- Header Start -->
+        <header class="header-03 head-sticky">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+
+                            <!-- Moblie Btn Start -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"   aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+                                <i class="nss-bars1"></i>
+                            </button>
+                            <!-- Moblie Btn End -->
+
+                            <!-- Nav Menu Start -->
+                            <div class="navbar-collapse sub-menu-bar collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav">
+                                    <li class="menu-item-has-children">
+                                        <a href="javascript:void(0);">Home</a>
+
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="javascript:void(0);">Services</a>
+                                    </li>
+
+                                    <li class="menu-item-has-children">
+                                        <a href="javascript:void(0);">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Nav Menu End -->
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header End -->
+          <!-- popup sidebar widget -->
+
+        <!-- Popup Search Start -->
+        <section class="popup_search_sec">
+            <div class="popup_search_overlay"></div>
+            <div class="pop_search_background">
+                <div class="middle_search">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <div class="popup_search_form">
+                                    <form method="get" action="#">
+                                        <input type="search" name="s" id="s" placeholder="Type Words and Hit Enter">
+                                        <button type="submit"><i class="nss-search2"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Popup Search End -->
+
+
+
+
+
+
+
+
+        <!-- Footer Start -->
+        <footer class="footer" style="background-image: url({% static 'assets/images/bg/3.png' %});">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <aside class="widget">
+                            <div class="about-widget">
+                                <h1 class="text-white">Samsikt</h1>
+                                <p>
+                                    Sedut perspiciatis unde omnis iste natus error sitlutem acc usantium doloremque denounce with illo inventore veritatis
+                                </p>
+                                <div class="ab-social">
+                                    <a href="https://www.facebook.com/"><i class="nss-facebook"></i></a>
+                                    <a href="https://twitter.com/"><i class="nss-twitter"></i></a>
+                                    <a href="http://instagram.com/"><i class="nss-instagram"></i></a>
+                                    <a href="https://google.com/"><i class="nss-linkedin-in"></i></a>
+                                    <a href="https://google.com/"><i class="nss-pinterest-p"></i></a>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <aside class="widget">
+                            <h3 class="widget-title">Contact Us</h3>
+                            <div class="fs-info">
+                                <i class="icon_pin_alt"></i>
+                                <p><a href="https://www.google.com/maps">2072 Pinnickinick Street, WA 98370</a></p>
+                            </div>
+                            <div class="fs-info">
+                                <i class="icon_phone"></i>
+                                <p><a href="tel:1245698909">+ 124 569 89 09</a></p>
+                            </div>
+                            <div class="fs-info">
+                                <i class="icon_mail_alt"></i>
+                                <p><a href="mailto:yourname@mail.com">Yourname@mail.com</a></p>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-xl-4 offset-xl-1 col-lg-4 col-md-12">
+                        <aside class="widget widget_mc4wp_form_widget">
+                            <h3 class="widget-title">Newsletters</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at est</p>
+                            <form class="mc4wp-form" method="post">
+                                <input type="email" name="EMAIL" placeholder="Email Address" required="">
+                                <button type="submit"><i class="icon_mail_alt"></i></button>
+                            </form>
+                        </aside>
+                    </div>
+                </div>
+                <!-- Copryrgint Start -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <p>© <a href="https://psdtowpwork.com/">Samsikt</a> 2021 | All Rights Reserved.</p>
+                                </div>
+                                <div class="col-md-5">
+                                    <ul>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="https://www.google.com/maps">Sitemap</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Copryrgint End -->
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+        <!-- Back To Top -->
+        <a href="javascript:void(0)" id="back-to-top">
+            <i class="nss-arrow-to-top1"></i>
+        </a>
+        <!-- Back To Top -->
+
+        <!-- Start Include All JS -->
+        <script src="{% static 'assets/js/jquery.js' %}"></script>
+        <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.appear.js' %}"></script>
+        <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.shuffle.min.js' %}"></script>
+        <script src="{% static 'assets/js/lightcase.js' %}"></script>
+
+        <script src="{% static 'assets/js/theme.js' %}"></script>
+        <!-- End Include All JS -->
+    </body>
+
+</html>
