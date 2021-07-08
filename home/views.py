@@ -1,5 +1,12 @@
-from django.views.generic.base import TemplateView
+# from django.views.generic.base import TemplateView
+#
+#
+# class HomeView(TemplateView):
+#     template_name = 'home/home.html'
+#
+from django.shortcuts import render
 
 
-class HomeView(TemplateView):
-    template_name = 'home/home.html'
+def home(request):
+    template = 'home/home.html'
+    return render(template,template)
