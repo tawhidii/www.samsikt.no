@@ -9,4 +9,5 @@ from django.shortcuts import render
 
 def home(request):
     template = 'home/home.html'
-    return render(template,template)
+    context = {}
+    return render(request,template,context)
