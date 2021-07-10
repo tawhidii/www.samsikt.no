@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import FooterSettings,TopBarSettings
+
+admin.site.register(FooterSettings)
+admin.site.register(TopBarSettings)

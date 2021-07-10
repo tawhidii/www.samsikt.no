@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # custom apps
     'home.apps.HomeConfig',
+    'settings.apps.SettingsConfig',
 ]
 
 MIDDLEWARE = [
@@ -62,6 +63,9 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'settings.context_processors.top_bar_values',
+
+
             ],
         },
     },
