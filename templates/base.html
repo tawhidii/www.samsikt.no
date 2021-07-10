@@ -119,35 +119,12 @@
                         <aside class="widget">
                             <div class="about-widget">
                                 <h1 class="text-white">Samsikt</h1>
-                                <p>
-                                    Sedut perspiciatis unde omnis iste natus error sitlutem acc usantium doloremque denounce with illo inventore veritatis
-                                </p>
-                                <div class="ab-social">
-                                    <a href="https://www.facebook.com/"><i class="nss-facebook"></i></a>
-                                    <a href="https://twitter.com/"><i class="nss-twitter"></i></a>
-                                    <a href="http://instagram.com/"><i class="nss-instagram"></i></a>
-                                    <a href="https://google.com/"><i class="nss-linkedin-in"></i></a>
-                                    <a href="https://google.com/"><i class="nss-pinterest-p"></i></a>
-                                </div>
+                                    {{ footer.footer_short_about|safe }}
                             </div>
                         </aside>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6">
-                        <aside class="widget">
-                            <h3 class="widget-title">Contact Us</h3>
-                            <div class="fs-info">
-                                <i class="icon_pin_alt"></i>
-                                <p><a href="https://www.google.com/maps">2072 Pinnickinick Street, WA 98370</a></p>
-                            </div>
-                            <div class="fs-info">
-                                <i class="icon_phone"></i>
-                                <p><a href="tel:1245698909">+ 124 569 89 09</a></p>
-                            </div>
-                            <div class="fs-info">
-                                <i class="icon_mail_alt"></i>
-                                <p><a href="mailto:yourname@mail.com">Yourname@mail.com</a></p>
-                            </div>
-                        </aside>
+                       {{ footer.footer_contact_details | safe }}
                     </div>
                     <div class="col-xl-4 offset-xl-1 col-lg-4 col-md-12">
                         <aside class="widget widget_mc4wp_form_widget">
