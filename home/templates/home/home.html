@@ -1,4 +1,29 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h1 class="text-center">Home page is coming !!</h1>
+            <!-- Hero Slider Start -->
+        <section class="slider-section">
+            <div class="hero-slider-02 owl-carousel anim_class">
+                <div class="single-slide bg-img d-flex align-items-center" data-bg-image="{{ hero_slider.background_image.url }}">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="slider-content text-center">
+                                    <h5 class="sub-title animated">{{ hero_slider.sub_title }}</h5>
+                                    <h2 class="animated">{{ hero_slider.main_title }}</h2>
+                                    <a href="contact.html" class="grap-btn to_top animated"> LEARN MORE<i class="nss-long-arrow-alt-right2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layer-left animated">
+                        <img src="{{ hero_slider.left_animated_image.url }}" alt="Samsikt">
+                    </div>
+                    <div class="layer-right animated">
+                        <img src="{{ hero_slider.right_animated_image.url }}" alt="Samsikt">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Hero Slider End -->
 {% endblock content %}
