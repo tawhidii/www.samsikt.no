@@ -13,3 +13,16 @@ class HeroSlider(models.Model):
 
     def __str__(self):
         return f'{self.sub_title} - {self.main_title}'
+
+
+class Services(models.Model):
+    service_title = models.CharField(max_length=50)
+    service_no = models.CharField(max_length=10)
+    service_details = models.TextField(max_length=80)
+    service_icon_name = models.CharField(max_length=50)
+
+    class Meta:
+        verbose_name_plural = 'Add Home Service'
+
+    def __str__(self):
+        return self.service_title
