@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}About Us{% endblock %}
+{% block content %}
+    <!-- Page Banner Start -->
+        <section class="page_banner" style="background-image: url({{ about.about_us_banner.url }});">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h3 class="pb_title">About Us</h3>
+                        <div class="page_crumb">
+                            <a href="{% url 'home' %}">Home</a> / <span>About Us</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Page Banner End -->
+         <!-- About Start -->
+        <section class="about-section-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="video_image">
+                            <img src="{{ about.about_image.url }}" alt="">
+                            <div class="bgcolor"></div>
+                            <a class="popup" href="{{ about.video_url }}">
+                                <img src="{{ about.video_thumbnail.url  }}" alt="">
+                                <i class="nss-play1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="ab-content">
+                            <h6 class="sub-title"><span></span>About Us</h6>
+                            <h2 class="sec-title">{{ about.about_title }}</h2>
+                            <p class="sec-desc">
+                                {{ about.about_description }}
+                            </p>
+                            <div class="single_skill" data-parcent="95">
+                                <h4>Software Development</h4>
+                                <div class="ss_parent"><div class="ss_child"></div><span>95%</span></div>
+                            </div>
+                            <div class="single_skill" data-parcent="85">
+                                <h4>Artificial Intelligence</h4>
+                                <div class="ss_parent"><div class="ss_child"></div><span>85%</span></div>
+                            </div>
+                            <div class="single_skill" data-parcent="80">
+                                <h4>Web Development</h4>
+                                <div class="ss_parent"><div class="ss_child"></div><span>80%</span></div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <div class="yearsXP">
+                                        <h2 data-counter="25" class="timer">25</h2>
+                                        <h3>Years of Experience</h3>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="service-item-01">
+                                        <h5>Call Us</h5>
+                                        <p>{{ about.phone_no }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About End -->
+
+{% endblock %}

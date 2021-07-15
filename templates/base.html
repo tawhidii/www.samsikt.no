@@ -34,7 +34,7 @@
                 <div class="row">
                     <div class="col-md-3">
                         <!-- logo Start-->
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="{% url 'home' %}">
                             <h1>Samsikt</h1>
                             <!-- <img src="assets/images/logo2.png" alt=""> -->
                         </a>
@@ -47,14 +47,14 @@
                                     <i class="graptor-calls"></i>
                                 </div>
                                 <p>Call Us</p>
-                                <h5><a href="tel:360-779-2228">{{ top_bar.phone_number }}</a></h5>
+                                <h5><a href="tel:{{ top_bar.phone_number }}">{{ top_bar.phone_number }}</a></h5>
                             </div>
                             <div class="icon-box-4">
                                 <div class="ic-box">
                                     <i class="graptor-mail"></i>
                                 </div>
                                 <p>Our Mail</p>
-                                <h5><a href="mailto:yourname@mail.com">{{ top_bar.email }}</a></h5>
+                                <h5><a href="mailto:{{ top_bar.email }}">{{ top_bar.email }}</a></h5>
                             </div>
                             <div class="icon-box-4">
                                 <div class="ic-box">
@@ -87,15 +87,11 @@
                             <div class="navbar-collapse sub-menu-bar collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav">
                                     <li class="menu-item-has-children">
-                                        <a href="javascript:void(0);">Home</a>
+                                        <a href="{% url 'home' %}">Home</a>
 
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="javascript:void(0);">Services</a>
-                                    </li>
-
-                                    <li class="menu-item-has-children">
-                                        <a href="javascript:void(0);">Blog</a>
+                                        <a href="{% url 'about-us' %}">About Us</a>
                                     </li>
                                     <li>
                                         <a href="contact.html">Contact</a>

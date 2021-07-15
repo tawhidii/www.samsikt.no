@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     # custom apps
     'home.apps.HomeConfig',
     'settings.apps.SettingsConfig',
+    'about_us.apps.AboutUsConfig',
     'django_summernote'
 ]
 
