@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block title %}Blog by Category{% endblock %}
+{% block content %}
+
+         <!-- Blog Start -->
+        <section class="blogPage">
+            <div class="container">
+                <div class="row">
+                    {% if post_count > 0 %}
+                        {% for post in category_post %}
+                            <div class="col-lg-4 col-md-6">
+                                <div class="blogItem2">
+                                    <div class="biThumb">
+                                        <img src="{{ post.thumbnail.url }}" alt="">
+                                        <a class="rmpost" href="{% url 'post-details' post.slug %}"><i class="nss-arrow-right1"></i></a>
+                                        <div class="biMeta2">
+                                            <a href="#"><i class="icon_clock_alt"></i>{{ post.created_at |date }}</a>
+                                            <a href="#"><i class="icon_profile"></i>{{ post.author }}</a>
+                                        </div>
+                                    </div>
+                                    <h3><a href="{% url 'post-details' post.slug %}">{{ post.title | truncatechars:50 }}</a></h3>
+                                </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                {% else %}
+                 <div class="row">
+                    <div class="col-md-12 text-center">
+                        <br><br>
+                        <h2 class="sec-title">No post found in this category !!</h2>
+                    </div>
+                 </div>
+                {% endif %}
+
+
+
+                <div class="row">
+{#                    <div class="col-lg-12 grapt-pagination text-center">#}
+{#                        <a class="next" href="blog2.html"><i class="nss-chevron-left1"></i></a>#}
+{#                        <span class="current">1</span>#}
+{#                        <a href="blog2.html">2</a>#}
+{#                        <a href="blog2.html">3</a>#}
+{#                        <a href="blog2.html">...</a>#}
+{#                        <a href="blog2.html">10</a>#}
+{#                        <a class="next" href="blog2.html"><i class="nss-chevron-right1"></i></a>#}
+{#                    </div>#}
+                </div>
+            </div>
+        </section>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+    <!-- Blog Start -->
+        <section class="singleBlogPage">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="single_blog  clearfix">
+                            <div class="ps-thumb">
+                                <img src="{{ post.blog_image.url }}" alt="">
+                            </div>
+                            <div class="bp-meta">
+
+                                <div class="bi-author">
+
+                                    <a href="#">{{ post.author }}</a>
+                                        <span>{{ post.created_at | date }}</span>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="sb_details clearfix">
+                                {{ post.text|safe }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="sidebar">
+                            <aside class="widget widget_categories">
+                                <h3 class="widget-title">Categories</h3>
+                                <ul>
+                                    {% for category in categories %}
+
+                                        <li><a href="{% url 'category-details' category.slug %}">{{ category.title }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </aside>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog End -->
+
+{% endblock %}

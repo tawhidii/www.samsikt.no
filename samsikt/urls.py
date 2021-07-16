@@ -7,6 +7,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('home.urls')),
     path('',include('about_us.urls')),
+    path('',include('blogs.urls')),
     path('summernote/', include('django_summernote.urls')),
 ]
 if settings.DEBUG:
