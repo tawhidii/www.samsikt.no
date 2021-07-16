@@ -22,16 +22,18 @@ class Teams(models.Model):
     team_image = models.ImageField(upload_to='uploads/teams')
     designation = models.CharField(max_length=100)
 
+    class Meta:
+        verbose_name_plural = 'Team Section'
 
-class TeamBanner(Teams):
+
+class TeamBanner(models.Model):
     teams_banner = models.ImageField(upload_to='uploads/about_us', help_text='Insert Team banner')
 
     class Meta:
-        verbose_name_plural = 'Team Section '
+        verbose_name_plural = 'Team Upper banner section'
 
     def __str__(self):
-        return self.name
-
+        return str(self.teams_banner)
     @property
     def get_banner(self):
         return self.teams_banner.url
