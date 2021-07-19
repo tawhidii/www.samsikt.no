@@ -9,6 +9,7 @@ class AboutUs(models.Model):
     video_thumbnail = models.ImageField(upload_to='uploads/about_us')
     video_url = models.URLField()
     phone_no = models.CharField(max_length=50)
+    user_profile = models.CharField(max_length=250)
 
     class Meta:
         verbose_name_plural = 'About Us page content'
@@ -34,6 +35,7 @@ class TeamBanner(models.Model):
 
     def __str__(self):
         return str(self.teams_banner)
+
     @property
     def get_banner(self):
         return self.teams_banner.url
